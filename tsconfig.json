@@ -3,16 +3,23 @@
   "compilerOptions": {
     "strict": true,
     "paths": {
-      "@/*": [
-        "./*"
-      ]
+      "@ui/*": ["./src/common/components/ui/*"],
+      "@components/*": ["./src/common/components/*"],
+      "@assets/*": ["./src/common/assets/*"],
+      "@hooks/*": ["./src/common/hooks/*"],
+      "@common/*": ["./src/common/*"],
+      "@generated/*": ["./src/generated/*"],
+      "@app/*": ["./src/app/*"],
+      "@/*": ["./src/*"]
     }
   },
   "include": [
     "**/*.ts",
     "**/*.tsx",
     ".expo/types/**/*.ts",
-    "expo-env.d.ts",
-    "nativewind-env.d.ts"
+    "@types/expo-env.d.ts",
+    "@types/nativewind-env.d.ts",
+    "nativewind-env.d.ts",
+    "expo-env.d.ts"
   ]
 }

@@ -1,6 +1,6 @@
 import Toast from 'react-native-toast-message'
 
-import { ApiErrorMessage } from '@/@types/errors'
+import { ApiErrorMessage } from '../../../@types/errors'
 
 function getErrorMessageByToken(token?: ApiErrorMessage) {
   if (!token) return
