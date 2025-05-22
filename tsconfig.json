@@ -3,14 +3,15 @@
   "compilerOptions": {
     "strict": true,
     "paths": {
-      "@ui/*": ["./src/common/components/ui/*"],
-      "@components/*": ["./src/common/components/*"],
-      "@assets/*": ["./src/common/assets/*"],
-      "@hooks/*": ["./src/common/hooks/*"],
+      "@ui/*": ["./src/components/ui/*"],
+      "@components/*": ["./src/components/*"],
+      "@assets/*": ["./src/assets/*"],
+      "@hooks/*": ["./src/hooks/*"],
       "@common/*": ["./src/common/*"],
       "@generated/*": ["./src/generated/*"],
       "@app/*": ["./src/app/*"],
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@root/*": ["./*"]
     }
   },
   "include": [

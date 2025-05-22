@@ -12,18 +12,24 @@ module.exports = function (api) {
         {
           root: ['./src'],
           alias: {
-            '@ui': './src/common/components/ui',
-            '@components': './src/common/components',
-            '@assets': './src/common/assets',
-            '@hooks': './src/common/hooks',
+            '@ui': './src/components/ui',
+            '@components': './src/components',
+            '@assets': './src/assets',
+            '@hooks': './src/hooks',
             '@common': './src/common',
             '@generated': './src/generated',
             '@app': './src/app',
             '@': './src',
+            '@root': './',
           },
           extensions: ['.js', '.jsx', '.ts', '.tsx'],
         },
       ],
     ],
+    env: {
+      production: {
+        plugins: ['react-native-paper/babel'],
+      },
+    },
   }
 }
